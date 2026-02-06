@@ -377,5 +377,129 @@ header a:hover{
 }
 .contact-container{
     display: flex;
-    grid-template-columns: ;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-2xl);
+}
+.contact-info h2{
+    margin-bottom: var(--spacing-md);
+}
+.contact-info p{
+    margin-bottom: var(--spacing-lg);
+}
+.social-container{
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-xl);
+}
+.sccial-icon{
+    width: 5rem;
+    height: 5rem;
+    padding: 0.75rem;
+    border-radius: var(--radius-md);
+    transition: var(--transition-default);
+}
+.social-icon img{
+    width: 100%;
+    filter: brightness(0) saturate(100%);
+    transition: filter 0.3s ease;
+}
+.social-icon:hover img{
+    filter: brightness(0)
+    saturate(100%)
+    invert(42%)
+    sepia(93%)
+    saturate(1352%)
+    hue-rotate(243deg)
+    brightness(79%)
+    contrast(91%)
+}
+
+/*FORMULÁRIO*/
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+form label{
+    font-size: var(--text-base);
+    font-weight: 600;
+}
+form input,
+form textarea{
+    width: 100%;
+    padding: 0.5rem var(--spacing-sm);
+    border-radius: var(--radius-md);
+    font-family: inherit;
+    font-size: var(--text-base);
+    transition: border-color 3s ease;
+}
+form input:focus,
+form textarea:focus{
+    border-color: var(--purple-500);
+    outline: none;
+}
+form textarea{
+    min-height: 5rem;
+    resize: none;
+}
+form span{
+    margin-top: -0.75rem;
+    font-size: var(--text-sm);
+    color: var(--error);
+}
+footer{
+    padding: 2.5rem;
+    background: linear-gradient(to rigth, var(--purple-500), var(--purple-800));
+    font-weight: 600;
+    text-align: center;
+    color: var(--white);
+}
+
+/*SEÇÃO SUCCESS*/
+.success-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: calc(100vh - 12.5rem);
+    padding: var(--spacing-xl) var(--spacing-md);
+}
+.success-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-md);
+    max-width: 37.5rem;
+    text-align: center;
+}
+.success-content h1{
+    font-size: var(--text-lg);
+    font-weight: 700;
+    color: var(--purple-800);
+}
+.success-content h2{
+    font-size: var(--text-lg);
+    color: var(--gray-400);
+}
+.success-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: var(--radius-full);
+    border-radius: var(--purple-100);
+}
+.success-icon img{
+    width: 6rem;
+    height: 6rem;
+    filter: brightness(0)
+    saturate(100%)
+    invert(11%)
+    sepia(69%)
+    saturate(3759%)
+    hue-rotate(256deg)
+    brightness(101%)
+    contrast(96%)
 }
